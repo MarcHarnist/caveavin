@@ -14,13 +14,20 @@ public class Main {
 		ClassPathXmlApplicationContext cpxac = new ClassPathXmlApplicationContext("ApplicationContext.xml");
 		GestionVin gv = cpxac.getBean("gestionVin", GestionVin.class);
 		
+
+		System.out.println("Liste des vins avant l'ajout");
+		
+		
 		List<Vin> liste = gv.listeVin();
 		for(Vin vin : liste) {
 			System.out.println(vin);
 		}
 		
 		Vin vin1 = new Vin(0, "Château Gormeaux", "non", "2014", "Blanc", "Bourgogne", 0);
+		gv.ajouterVin(vin1);
+		
 		System.out.println("Liste des vins après l'ajout");
+		
 		liste= gv.listeVin();
 		for(Vin vin : liste) {
 			System.out.println(vin);

@@ -47,19 +47,17 @@
 		<property name="dataSource" ref="datasource"/>
 		<property name="jpaVendorAdapter">
 			<bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
-				<property name="showSql" value="false"/>
+				<property name="showSql" value="true"/>
 				<property name="database" value="MYSQL"/>
 			</bean>
 		</property>
 	
-		<!--		
 		<property name="jpaProperties">
 			<props>
 				<prop key="hibernate.hbm2ddl.auto">update</prop>
-			 	create | validate | update | create-drop		
+<!-- 			 	create | validate | update | create-drop		 -->
 			</props>
 		</property>	
-	-->	
 	
 	</bean>
 
