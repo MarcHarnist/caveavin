@@ -27,7 +27,6 @@ public interface VinDao extends JpaRepository<Vin, Integer> {
 	List<Vin> findByQuantity(String quantite);
 	
 	// Find by quantity order desc
-	List<Vin> findByQuantityOrderDesc(String quantite);
 	
 	// Find by color order asc
 	List<Vin> findByColor(String couleur);
