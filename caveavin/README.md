@@ -1,7 +1,7 @@
 # TP Cave à vin
 ## 27-08-2019
 
-[a link](https://github.com/HIGELIN/caveavin/tree/master/caveAVin)
+[Higelin's work](https://github.com/HIGELIN/caveavin/tree/master/caveAVin)
 
 Utiliser Spring Data
 Modèle: eclipse-workspace/03-SpringORM-JPA-Data
