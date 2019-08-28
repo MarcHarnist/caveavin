@@ -38,38 +38,18 @@ public class GestionVin {
 		return vDao.count();
 	}
 	public List<Vin> rechercherVinParNom(String nom){
-		return vDao.findByName(nom);
-	}
-	public List<Vin> rechercherVinParNomDecroissant(String nom){
-		return vDao.findByNameOrderByDesc(nom);
+		return vDao.findByNom(nom);
 	}
 	public List<Vin> rechercherVinParMellesime(String millesime){
-		return vDao.findByVintage(millesime);
-	}
-	public List<Vin> rechercherVinParMellesimeDecroissant(String millesime){
-		return vDao.findByVintageOrderDesc(millesime);
+		return vDao.findByMillesime(millesime);
 	}
 	public List<Vin> rechercherVinPetillant(String petillant){
-		return vDao.findBySparkling(petillant);
-	}
-	// Retourne une liste vins classés par quantité par ordre croissant
-	public List<Vin> rechercherVinParQuantite(String quantite){
-		return vDao.findByQuantity(quantite);
-	}
-	// Retourne une liste vins classés par quantité par ordre décroissant
-	public List<Vin> rechercherVinParQuantiteDecroissant(String quantite){
-		return vDao.findByQuantityOrderDesc(quantite);
+		return vDao.findByPetillant(petillant);
 	}
 	public List<Vin> rechercherVinParCouleur(String couleur){
-		return vDao.findByColor(couleur);
-	}
-	public List<Vin> rechercherVinParCouleurDecroissant(String couleur){
-		return vDao.findByColorOrderDesc(couleur);
+		return vDao.findByCouleur(couleur);
 	}
 	public List<Vin> rechercherVinParRegion(String region){
-		return vDao.findByCountry(region);
-	}
-	public List<Vin> rechercherVinParRegionDecroissant(String region){
-		return vDao.findByCountryOrderDesc(region);
+		return vDao.findByRegion(region);
 	}
 }

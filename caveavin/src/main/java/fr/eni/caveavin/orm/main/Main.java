@@ -11,7 +11,7 @@ public class Main {
 		ClassPathXmlApplicationContext cpxac = new ClassPathXmlApplicationContext("ApplicationSpringData_Marc.xml");
 		GestionVin gv = cpxac.getBean("gestionVin", GestionVin.class);
 		
-		
+//		List<Vin> 
 		
 	}
 
