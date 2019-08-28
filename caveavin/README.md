@@ -1,6 +1,10 @@
 # TP Cave à vin
 ## 27-08-2019
 
+https://github.com/MarcHarnist/caveavin_cours
+
+[Model](https://github.com/MarcHarnist/caveavin_cours)
+
 [Higelin's work](https://github.com/HIGELIN/caveavin/tree/master/caveAVin)
 
 Utiliser Spring Data
